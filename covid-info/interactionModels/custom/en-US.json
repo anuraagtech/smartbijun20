@@ -1,0 +1,480 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "covid info",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "HelloWorldIntent",
+          "slots": [],
+          "samples": [
+            "hello",
+            "how are you",
+            "say hi world",
+            "say hi",
+            "hi",
+            "say hello world",
+            "say hello"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "addDetails",
+          "slots": [
+            {
+              "name": "name",
+              "type": "AMAZON.Person"
+            },
+            {
+              "name": "location",
+              "type": "Indian_States"
+            },
+            {
+              "name": "tmp",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{tmp}"
+              ]
+            }
+          ],
+          "samples": [
+            "{name} and {location} and {tmp}",
+            "This is {name} from {location} having {tmp}",
+            "My name is {name} from {location} I have {tmp}",
+            "I am {name} from {location}"
+          ]
+        },
+        {
+          "name": "NationalCasesIntent",
+          "slots": [],
+          "samples": [
+            "how is india effected by corona",
+            "total india cases",
+            "national wide cases",
+            "What are the current number of cases in India"
+          ]
+        },
+        {
+          "name": "StateCasesIntent",
+          "slots": [
+            {
+              "name": "state",
+              "type": "Indian_States"
+            }
+          ],
+          "samples": [
+            "What is the current number of cases in {state}",
+            "How many cases are there in {state}",
+            "What is the current status in {state}"
+          ]
+        },
+        {
+          "name": "mildCondition",
+          "slots": [
+            {
+              "name": "mildSymptoms",
+              "type": "mildSymptoms",
+              "multipleValues": {
+                "enabled": true
+              }
+            }
+          ],
+          "samples": [
+            "i may have {mildSymptoms}",
+            "low temparature and cough",
+            "i have little fever and cold"
+          ]
+        },
+        {
+          "name": "questionAlexa",
+          "slots": [],
+          "samples": [
+            "why should i have this conversation",
+            "what is this skill about",
+            "how can you guide me ",
+            "what can you do "
+          ]
+        },
+        {
+          "name": "severeCondition",
+          "slots": [
+            {
+              "name": "severeSymptom",
+              "type": "severe"
+            }
+          ],
+          "samples": [
+            "i have trouble while breathing",
+            "i am troubling while breathing",
+            "i am struggling to breath",
+            "i think i have trouble in breathe",
+            "what type is {severeSymptom} problem",
+            "i may have {severeSymptom} problem",
+            "i thinnk i have {severeSymptom} problem",
+            "{severeSymptom} problem"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "id": "SK",
+              "name": {
+                "value": "Sikkim"
+              }
+            },
+            {
+              "id": "LD",
+              "name": {
+                "value": "Lakshadweep"
+              }
+            },
+            {
+              "id": "DD",
+              "name": {
+                "value": "Daman and Diu"
+              }
+            },
+            {
+              "id": "DN",
+              "name": {
+                "value": "Dadra and Nagar Haveli"
+              }
+            },
+            {
+              "id": "NL",
+              "name": {
+                "value": "Nagaland"
+              }
+            },
+            {
+              "id": "AR",
+              "name": {
+                "value": "Arunachal Pradesh"
+              }
+            },
+            {
+              "id": "MZ",
+              "name": {
+                "value": "Mizoram"
+              }
+            },
+            {
+              "id": "TR",
+              "name": {
+                "value": "Tripura"
+              }
+            },
+            {
+              "id": "MN",
+              "name": {
+                "value": "Manipur"
+              }
+            },
+            {
+              "id": "PY",
+              "name": {
+                "value": "Puducherry"
+              }
+            },
+            {
+              "id": "GA",
+              "name": {
+                "value": "Goa"
+              }
+            },
+            {
+              "id": "ML",
+              "name": {
+                "value": "Meghalaya"
+              }
+            },
+            {
+              "id": "AN",
+              "name": {
+                "value": "Andaman and Nicobar Islands"
+              }
+            },
+            {
+              "id": "LA",
+              "name": {
+                "value": "Ladakh"
+              }
+            },
+            {
+              "id": "CH",
+              "name": {
+                "value": "Chandigarh"
+              }
+            },
+            {
+              "id": "AS",
+              "name": {
+                "value": "Assam"
+              }
+            },
+            {
+              "id": "CT",
+              "name": {
+                "value": "Chhattisgarh"
+              }
+            },
+            {
+              "id": "HP",
+              "name": {
+                "value": "Himachal Pradesh"
+              }
+            },
+            {
+              "id": "JH",
+              "name": {
+                "value": "Jharkhand"
+              }
+            },
+            {
+              "id": "UT",
+              "name": {
+                "value": "Uttarakhand"
+              }
+            },
+            {
+              "id": "OR",
+              "name": {
+                "value": "Odisha"
+              }
+            },
+            {
+              "id": "BR",
+              "name": {
+                "value": "Bihar"
+              }
+            },
+            {
+              "id": "PB",
+              "name": {
+                "value": "Punjab"
+              }
+            },
+            {
+              "id": "HR",
+              "name": {
+                "value": "Haryana"
+              }
+            },
+            {
+              "id": "WB",
+              "name": {
+                "value": "West Bengal"
+              }
+            },
+            {
+              "id": "JK",
+              "name": {
+                "value": "Jammu and Kashmir"
+              }
+            },
+            {
+              "id": "KL",
+              "name": {
+                "value": "Kerala"
+              }
+            },
+            {
+              "id": "KA",
+              "name": {
+                "value": "Karnataka"
+              }
+            },
+            {
+              "id": "AP",
+              "name": {
+                "value": "Andhra Pradesh"
+              }
+            },
+            {
+              "id": "TG",
+              "name": {
+                "value": "Telangana"
+              }
+            },
+            {
+              "id": "UP",
+              "name": {
+                "value": "Uttar Pradesh"
+              }
+            },
+            {
+              "id": "MP",
+              "name": {
+                "value": "Madhya Pradesh"
+              }
+            },
+            {
+              "id": "TN",
+              "name": {
+                "value": "Tamil Nadu"
+              }
+            },
+            {
+              "id": "RJ",
+              "name": {
+                "value": "Rajasthan"
+              }
+            },
+            {
+              "id": "GJ",
+              "name": {
+                "value": "Gujarat"
+              }
+            },
+            {
+              "id": "DL",
+              "name": {
+                "value": "Delhi"
+              }
+            },
+            {
+              "id": "MH",
+              "name": {
+                "value": "Maharashtra"
+              }
+            }
+          ],
+          "name": "Indian_States"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "cough"
+              }
+            },
+            {
+              "name": {
+                "value": "cold"
+              }
+            },
+            {
+              "name": {
+                "value": "fever"
+              }
+            }
+          ],
+          "name": "mildSymptoms"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "respiration"
+              }
+            },
+            {
+              "name": {
+                "value": "breathing"
+              }
+            }
+          ],
+          "name": "severe"
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "addDetails",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "name",
+              "type": "AMAZON.Person",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            },
+            {
+              "name": "location",
+              "type": "Indian_States",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            },
+            {
+              "name": "tmp",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": true,
+              "prompts": {
+                "confirmation": "Confirm.Slot.385442800685.477562046539",
+                "elicitation": "Elicit.Slot.385442800685.477562046539"
+              },
+              "validations": [
+                {
+                  "type": "isGreaterThan",
+                  "prompt": "Slot.Validation.385442800685.477562046539.903513891581",
+                  "value": "94"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Slot.Validation.797784763659.1068128634891.384008507076",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please return your Temparature in Farenheit "
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.385442800685.477562046539.903513891581",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Try Againin Farenheit"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Slot.385442800685.477562046539",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Are You sure {name} ?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.385442800685.477562046539",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Hey, Temparature again"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "53"
+}
